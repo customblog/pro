@@ -52,8 +52,8 @@ var app = new Vue({
             var app = this;
 
             if (this.q != undefined && this.q !== "") {
-                let API_KEY = "AIzaSyBAEEvhRcBk8FVOmxv6jJON2VhMUpqQgI8";
-                let CSE_ID = "000680021646118888977:u60wgdclz_0";
+                let API_KEY = "AIzaSyBd7Njh4QVMRIQ6AnlGkkBRH0qlXGf3Vss";
+                let CSE_ID = "002947682112019850311:paim0evw0mw";
                 axios.get('https://www.googleapis.com/customsearch/v1?key='+API_KEY+'&cx='+CSE_ID+'&q=' + this.q)
                     .then(function (response) {
                         app.searchResult = response.data;
